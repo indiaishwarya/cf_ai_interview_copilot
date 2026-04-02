@@ -58,9 +58,32 @@ It also includes:
 
 ```bash
 npm install
+```
 
 ### Run locally
+```bash
 npm run dev
+```
 
 ### Deploy
+```bash
 npm run deploy
+```
+
+### Project structure
+src/
+  index.ts        # Worker entrypoint and routes
+  agent.ts        # Stateful interview agent
+  prompts.ts      # System prompts and templates
+  types.ts        # Shared types
+  workflow.ts     # End-of-session feedback workflow
+  utils.ts        # Helpers
+
+web/
+  index.html      # Chat UI
+  styles.css      # Styling
+  app.js          # Frontend logic
+
+### Notes
+
+This project is intentionally minimal so reviewers can run it quickly and inspect the important components easily.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interview Copilot</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Interview Copilot</h1>
+    <p class="subtitle">Practice mock interviews with AI on Cloudflare</p>
+
+    <div class="controls">
+      <input id="roleInput" type="text" placeholder="Enter target role, e.g. Frontend Engineer" />
+      <button id="startBtn">Start Session</button>
+    </div>
+
+    <div id="chat" class="chat"></div>
+
+    <div class="composer">
+      <input id="messageInput" type="text" placeholder="Type your answer..." />
+      <button id="sendBtn">Send</button>
+      <button id="endBtn">End Interview</button>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

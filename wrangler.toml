@@ -1,0 +1,27 @@
+name = "cf-ai-interview-copilot"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+
+[assets]
+directory = "./web"
+binding = "ASSETS"
+
+[[durable_objects.bindings]]
+name = "INTERVIEW_AGENT"
+class_name = "InterviewAgent"
+
+[[workflows]]
+name = "feedback-workflow"
+binding = "FEEDBACK_WORKFLOW"
+class_name = "FeedbackWorkflow"
+
+[ai]
+binding = "AI"
+remote = true
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["InterviewAgent"]
+
+[observability]
+enabled = true
